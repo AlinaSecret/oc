@@ -3,6 +3,8 @@ package admin
 import (
 	"fmt"
 
+	"github.com/openshift/oc/pkg/cli/admin/compare"
+
 	"github.com/spf13/cobra"
 
 	"k8s.io/cli-runtime/pkg/genericiooptions"
@@ -117,7 +119,7 @@ func NewCommandAdmin(f kcmdutil.Factory, streams genericiooptions.IOStreams) *co
 			Message: "Configuration:",
 			Commands: []*cobra.Command{
 				createbootstrapprojecttemplate.NewCommandCreateBootstrapProjectTemplate(f, streams),
-
+				compare.NewCmd(f, streams),
 				createlogintemplate.NewCommandCreateLoginTemplate(f, streams),
 				createproviderselectiontemplate.NewCommandCreateProviderSelectionTemplate(f, streams),
 				createerrortemplate.NewCommandCreateErrorTemplate(f, streams),
