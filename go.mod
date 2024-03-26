@@ -29,7 +29,6 @@ require (
 	github.com/gonum/graph v0.0.0-20170401004347-50b27dea7ebb
 	github.com/google/go-cmp v0.6.0
 	github.com/gosimple/slug v1.13.1
-	github.com/joelanford/ignore v0.0.0-20210610194209-63d4919d8fb2
 	github.com/int128/oauth2cli v1.14.0
 	github.com/joelanford/ignore v0.1.0
 	github.com/moby/buildkit v0.0.0-20181107081847-c3a857e3fca0
